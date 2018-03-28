@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-//        usingSwitchCase();
-//        usingCommandPattern();
-//        usingCommandPatternWithLambda();
-        usingCommandPatternWithMethodReference();
+        // change here which method you want to call
+        // every method have the same functionality, but are implemented in different ways
+        usingSwitchCase();
+
+
     }
 
     public static void usingSwitchCase() {
@@ -42,6 +43,14 @@ public class Main {
         } while (doAgain);
     }
 
+
+
+
+    //////////////////////////////////////////////////////////////////
+
+
+
+
     public static void usingCommandPattern() {
         System.out.println("Testing command pattern");
         Player ourPlayer = new Player(10, 15);
@@ -68,6 +77,15 @@ public class Main {
         } while (doAgain);
     }
 
+
+
+
+    //////////////////////////////////////////////////////////////////
+
+
+
+
+
     public static void usingCommandPatternWithLambda() {
         System.out.println("Testing command pattern with lambda");
         Player ourPlayer = new Player(10, 15);
@@ -93,6 +111,15 @@ public class Main {
 
         } while (doAgain);
     }
+
+
+
+
+
+    //////////////////////////////////////////////////////////////////
+
+
+
 
     public static void usingCommandPatternWithMethodReference() {
         System.out.println("Testing command pattern with method reference");

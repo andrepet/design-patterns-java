@@ -6,14 +6,6 @@ public class Player {
         this.y = y;
     }
 
-    @Override
-    public String toString() {
-        return "Player{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
-    }
-
     public void moveUp(){
         y--;
     }
@@ -25,5 +17,13 @@ public class Player {
     }
     public void moveRight(){
         x++;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
     }
 }
