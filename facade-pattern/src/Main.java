@@ -4,7 +4,7 @@ public class Main {
         int accountNumber = 12345678;
         int securityCode = 1234;
 
-        /*
+
         // instead of doing this...
         WelcomeToBank bankWelcome = new WelcomeToBank(); // prints welcome-text on initialization
         AccountNumberCheck acctChecker = new AccountNumberCheck();
@@ -27,13 +27,13 @@ public class Main {
             System.out.println("Transaction Failed\n");
         }
 
-        */
+
         ////////////////////////////////////////////////////////////////////////
 
         // we can do this!
-        BankAccountFacade accessingBank = new BankAccountFacade(accountNumber, securityCode);
-        accessingBank.withdrawCash(50.00);
-        accessingBank.withdrawCash(990.00);
+//        BankAccountFacade accessingBank = new BankAccountFacade(accountNumber, securityCode);
+//        accessingBank.withdrawCash(50.00);
+//        accessingBank.withdrawCash(990.00);
 
     }
 }

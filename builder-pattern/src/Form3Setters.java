@@ -6,11 +6,11 @@ public class Form3Setters {
     private String email;
 
     public Form3Setters() {
-        this.name = "";
-        this.address = "";
-        this.zipcode = "";
-        this.city = "";
-        this.email = "";
+        this.name = "Kalle Anka";
+        this.address = "Paradisäppelvägen 111";
+        this.zipcode = "1111";
+        this.city = "Ankeborg";
+        this.email = "kalle_anka@kvack.com";
     }
 
     public void setName(String name) {
@@ -33,5 +33,14 @@ public class Form3Setters {
         this.email = email;
     }
 
-    // getter-methods
+    @Override
+    public String toString() {
+        return "Form3Setters{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                ", city='" + city + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }

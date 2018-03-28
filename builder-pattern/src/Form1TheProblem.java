@@ -1,9 +1,9 @@
 public class Form1TheProblem {
-    private String name;
-    private String address;
-    private String zipcode;
-    private String city;
-    private String email;
+    final private String name;
+    final private String address;
+    final private String zipcode;
+    final private String city;
+    final private String email;
 
     public Form1TheProblem(String name, String address, String zipcode, String city, String email) {
         this.name = name;
@@ -13,5 +13,14 @@ public class Form1TheProblem {
         this.email = email;
     }
 
-    // getter-methods
+    @Override
+    public String toString() {
+        return "Form1TheProblem{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                ", city='" + city + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }

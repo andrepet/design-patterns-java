@@ -13,14 +13,23 @@ public class Form4BuilderPattern {
         this.email = form.email;
     }
 
-    // getter-methods
+    @Override
+    public String toString() {
+        return "Form4BuilderPattern{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                ", city='" + city + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 
     public static class FormBuilder{
-        private String name = "";
-        private String address = "";
-        private String zipcode = "";
-        private String city = "";
-        private String email = "";
+        private String name = "Kalle Anka";
+        private String address = "Paradisäppelvägen 111";
+        private String zipcode = "1111";
+        private String city = "Ankeborg";
+        private String email = "kalle_anka@kvack.com";
 
         public Form4BuilderPattern build(){
             return new Form4BuilderPattern(this);
