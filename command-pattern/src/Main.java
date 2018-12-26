@@ -7,7 +7,8 @@ public class Main {
 
         // change here which method you want to call
         // every method have the same functionality, but are implemented in different ways
-        usingSwitchCase();
+//        usingSwitchCase();
+        usingCommandPattern();
 
 
     }
@@ -145,5 +146,6 @@ public class Main {
             }
 
         } while (doAgain);
+
     }
 }

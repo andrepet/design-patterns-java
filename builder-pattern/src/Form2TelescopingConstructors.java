@@ -10,6 +10,7 @@ public class Form2TelescopingConstructors {
     }
 
     public Form2TelescopingConstructors(String name) {
+
         this(name, "Paradisäppelvägen 111");
     }
 
